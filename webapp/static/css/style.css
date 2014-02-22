@@ -14,9 +14,9 @@ body, button, input, select, textarea { font-family: Helvetica, Arial, sans-seri
 ::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
 ::selection { background: #0075BF; color: #fff; text-shadow: none; }
 
-a, a:link { color: #14387F; text-decoration: none; }
-a:visited { color: #14387F; }
-a:hover { color: #71b037; text-decoration: underline;}
+a, a:link { color: #fff; text-decoration: none; }
+a:visited { color: #fff; }
+a:hover { color: #fff; text-decoration: underline;}
 a:focus { outline: thin dotted; }
 
 abbr[title] { border-bottom: 1px dotted; }
@@ -208,7 +208,7 @@ noscript {
 h1 {
 	margin: 0 0 10px 0;
 	padding: 0;
-	color: #777777;
+	color: #fff;
 	font-weight: normal;
 	font-size: 2.2em;
 }
@@ -379,11 +379,11 @@ li.resultitem {
 li.resultitem a {
 	display: block;
 	text-decoration: none;
-	border: 1px solid #EBF4E3;
-	padding: 5px;
+	border-bottom: 1px solid #fff;
+	padding: 5px 5px 20px;
 }
 li.resultitem a:hover {
-	border: 1px solid #ccc;
+	border-color: #ccc;
 }
 li.resultitem .title {
 	display: block;
@@ -398,7 +398,7 @@ li.resultitem .title em {
 }
 li.resultitem .snippet {
 	display: block;
-	color: #222;
+	color: #eee;
 }
 li.resultitem a:hover .snippet {
 	color: #000;
