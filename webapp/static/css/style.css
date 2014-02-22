@@ -12,10 +12,10 @@ body { margin: 0; font-size: 13px; line-height: 1.231; }
 body, button, input, select, textarea { font-family: Helvetica, Arial, sans-serif; color: #222; }
 
 ::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
-::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::selection { background: #0075BF; color: #fff; text-shadow: none; }
 
-a, a:link { color: #6c9447; text-decoration: none; }
-a:visited { color: #537930; }
+a, a:link { color: #14387F; text-decoration: none; }
+a:visited { color: #14387F; }
 a:hover { color: #71b037; text-decoration: underline;}
 a:focus { outline: thin dotted; }
 
@@ -106,11 +106,11 @@ header {
 }
 #name {
 	font-size: 170%;
-	color: #97c66b;
+	color: #005CA9;
 }
 #name, #name:link, #name:visited {
 	text-decoration: none;
-	color: #97c66b;
+	color: #14387F;
 }
 #name:hover {
 	text-decoration: underline;
@@ -156,41 +156,39 @@ footer .column {
 
 /* rounded green content container */
 .content {
-	background-color: #ebf4e3;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
+	background-color: #009BD9;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
 	padding: 1.45em 1.3em;
 }
 .content.top {
-	-webkit-border-top-left-radius: 10px;
-	-webkit-border-top-right-radius: 10px;
-	-moz-border-radius-topleft: 10px;
-	-moz-border-radius-topright: 10px;
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-top-right-radius: 3px;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-topright: 3px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
 	-webkit-border-bottom-left-radius: 0;
 	-webkit-border-bottom-right-radius: 0;
 	-moz-border-radius-bottomleft: 0;
 	-moz-border-radius-bottomright: 0;
 	border-bottom-left-radius: 0;
 	border-bottom-right-radius: 0;
-	margin-bottom: 3px;
 }
 .content.bottom {
-	-webkit-border-bottom-left-radius: 10px;
-	-webkit-border-bottom-right-radius: 10px;
-	-moz-border-radius-bottomleft: 10px;
-	-moz-border-radius-bottomright: 10px;
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
+	-webkit-border-bottom-left-radius: 3px;
+	-webkit-border-bottom-right-radius: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	-moz-border-radius-bottomright: 3px;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
 	-webkit-border-top-left-radius: 0%;
 	-webkit-border-top-right-radius: 0;
 	-moz-border-radius-topleft: 0;
 	-moz-border-radius-topright: 0;
 	border-top-left-radius: 0;
 	border-top-right-radius: 0;
-	margin-top: 3px;
 }
 .content.middle {
 	-webkit-border-radius: 0;
@@ -499,8 +497,7 @@ a:hover .del {
 }
 #home #map-claim, #home .header {
 	font-size: 140%;
-	color: #777777;
-	text-shadow: rgba(255, 255, 255, 0.5) -1px -1px 1px, rgba(50, 50, 50, 0.2) 1px 1px 1px;
+	color: #fff;
 	text-align: center;
 }
 #home .searchform {
@@ -525,8 +522,7 @@ a:hover .del {
 	text-align: center;
 }
 #position-prompt .question {
-	color: #777777;
-	text-shadow: rgba(255, 255, 255, 0.5) -1px -1px 1px, rgba(50, 50, 50, 0.2) 1px 1px 1px;
+	color: #fff;
 	padding-bottom: 10px;
 }
 #position-prompt form, #location-prompt-resultchoice {
@@ -625,7 +621,7 @@ code {
 */
 
 .awesome, .awesome:visited, .awesome:link {
-	background: #7fa75a url(/static/img/gradient.png) repeat-x; 
+	background: #14387F url(/static/img/gradient.png) repeat-x; 
 	display: inline-block; 
 	padding: 5px 10px 6px; 
 	color: #ffffff; 
@@ -708,7 +704,9 @@ form .awesome {
   /* Gilt auch fuer iPad im vertikalen Modus */
   body { margin: 10px 20px; font-size: 14px;}
   header { min-height: 92px; }
-  #logo { width: 116px; }
+  #logo {
+    border-color: #009BD9 #009BD9 transparent transparent; border-style: solid; border-width: 24px; float: right; width: 0; height: 0;
+ }
   #logo img { width: 86px; height: 71px; }
   #nametagline { width: 300px; }
   #name { font-size: 200%; }
